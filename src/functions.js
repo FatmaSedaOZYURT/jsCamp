@@ -1,104 +1,83 @@
-function addToCart(quantity,productName="Elma") {
-    console.log("Sepete eklendi : ürün : " 
-    + productName + " adet : " + quantity)
+//Fonksiyonel parametre bu şekilde kullanılmaktadır.
+console.log("1. Fonskiyon Kullanımı:");
+function addToCart( quantity, productName="Elma") {
+    console.log("Sepete Eklendi -> "+quantity+" adet " + productName);
 }
 
-//addToCart()
-addToCart(10)
-//addToCart(15)
+addToCart("");
+addToCart(2,"Armut");
 
-let sayHello = ()=>{
-    console.log("Hello World!")
-}
+console.log("2. Fonskiyon Kullanımı:");
+let sayHello = () =>{
+console.log("Hello Brother 👊");
+};
+sayHello();
 
-sayHello()
-
+console.log("3. Fonskiyon Kullanımı:");
 let sayHello2 = function () {
-    console.log("Hello World 2")
+    console.log("Hello Brothers 🤜🤛");
 }
-
 sayHello2();
 
-function addToCart2(productName, quantity, unitPrice) {
-    
+//Fonksiyona nesne göndermek
+function addToCart2(product) {
+    console.log("Ürün Adı: " + product.Name);
+    console.log("Ürün Fiyat: " + product.Fiyat);
+    console.log("Ürün Adet: " + product.Adet);
 }
-
-addToCart2("Elma",5,10)
-addToCart2("Armut", 2, 20)
-addToCart2("Limon",3,15)
-
-let product1 = {productName:"Elma", unitPrice:10, quantity:5}
-
-function addToCart3(product) {
-    console.log("Ürün : "+product.productName)
-    console.log("Adet : "+product.quantity)
-    console.log("Fiyat : "+product.unitPrice)
+let product1 = {
+    Name : "Elma",
+    Fiyat : 10,
+    Adet : 50
 }
+addToCart2(product1);
+
+/*****
+ * Referans Tip ~ Referans Type - Heap
+ * Burada product3'ün değişmesinin sebebi, product2'nin referans adresinin 
+ * product3 ile aynı adresi göstermesidir.
+ * Her ne kadar product2 değişmiş gibi görünse de product3 değişmiştir.
+ * Bu durumda ilk product2 nin referans adresi ram de belli bir süre sonra kaybolacaktır.
+ ******/
+let product2 = {
+    Name : "Karpuz",
+    Fiyat : 100,
+    Adet : 10
+}
+let product3 = {
+    Name : "Karpuz",
+    Fiyat : 100,
+    Adet : 10
+}
+product2 = product3;
+product2.Name="Kavun";
+console.log(product3);
 
 
-addToCart3(product1)
 
-let product2 = {productName:"Elma", unitPrice:10, quantity:5}
-let product3 = {productName:"Elma", unitPrice:10, quantity:5}
-product2 = product3
-product2.productName = "KARPUZ"
-console.log(product3.productName)
+/****
+ * Değer Tip ~ Value Type - Stack
+ * Referans tip olmadığı için çıktı 20 olur.
+ ****/
 
-let sayi1 = 10
-let sayi2 = 20
-sayi1 = sayi2
-sayi2 = 100
-console.log(sayi1)
+let sayi1 = 10, sayi2= 20;
+sayi1 = sayi2;
+sayi2 = 30;
+console.log(sayi1);
 
-function addToCart4(products) {
-    console.log(products)
+
+function addToCart4(x) {
+    console.log(products);
+    //Burada x i aradı bulamadı. Böylelikle bir üst scope a baktı ve products ı buldu.
+    //Bulduğu products ı bastı.
 }
 
 let products = [
-    {productName:"Elma", unitPrice:10, quantity:5},
-    {productName:"Armut", unitPrice:10, quantity:5},
-    {productName:"Karpuz", unitPrice:10, quantity:5}
-]
+    {Name : "Elma", Fiyat : 10, Adet : 50},
+    {Name : "Elma1", Fiyat : 10, Adet : 50},
+    {Name : "Elma2", Fiyat : 10, Adet : 50}
+];
 
-addToCart4(products)
+addToCart4(products);
 
-function add(bisey,...numbers) { //rest
-    let total = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        total = total + numbers[i]
-    }
-    console.log(total)
-    console.log(bisey)
-}
-
-add(20,30)
-//add(20,30, 40)
-//add(20,30, 40, 50)
-
-let numbers = [30,10,500,600,120]
-//console.log(...numbers)
-console.log(Math.max(...numbers))
-
-let [icAnadolu,marmara,karadeniz,[icAnadoluSehirleri]] = [
-    {name:"İç Anadolu", population:"20M"},
-    {name:"Marmara", population:"30M"},
-    {name:"Karadeniz", population:"10M"},
-    [
-        ["Ankara","Konya"],
-        ["İstanbul","Bursa"],
-        ["Sinop","Trabzon"],
-    ]
-]
-
-// console.log(icAnadolu.name)
-// console.log(icAnadolu.population)
-console.log(icAnadoluSehirleri)
-
-let newProductName, newUnitPrice, newQuantity
-({productName:newProductName, unitPrice:newUnitPrice, quantity:newQuantity } 
-= {productName:"Elma", unitPrice:10, quantity:5})
-
-console.log(newProductName)
-console.log(newUnitPrice)
-console.log(newQuantity)
-
+console.log("1:58");
