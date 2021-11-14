@@ -16,4 +16,5 @@
       <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/restSpreadDestructure/Spread.js">Spread</a></li>
     </ul>
   </li>
+  <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/functions.js">Rest Spread Destructed</a>Functions</li>
   </ul>
