@@ -1,0 +1,25 @@
+//Akümilator görevi görür.
+//sql deki sum metodu gibi düşün.
+let products = [
+    {id:1, name : "Acer Laptop", unitPrice: 15000},
+    {id:2, name : "Asus Laptop", unitPrice: 16000},
+    {id:3, name : "Hp Laptop", unitPrice: 13000},
+    {id:4, name : "Dell Laptop", unitPrice: 12000},
+    {id:5, name : "Casper Laptop", unitPrice: 17000}
+];
+
+let cartTotal = products.reduce((acc, product)=> acc + product.unitPrice, 0);
+
+console.log(cartTotal);
+
+
+console.log("Her bir ürün kalemine KDVsiz ekleyerek göstermek:");
+
+let cartTotal2 = products.filter(p=>p.unitPrice > 12000)
+                         .map(u=>{
+                                u.unitPrice = u.unitPrice * 1.18;
+                                return u;
+                            })
+                         .reduce((a, u) => a + u.unitPrice, 0);
+
+console.log(cartTotal2);
