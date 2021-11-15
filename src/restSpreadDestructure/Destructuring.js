@@ -30,3 +30,31 @@ console.log(category["name"]);
 let {id, name} = category
 console.log(id)
 console.log(name)
+
+
+let [icAnadolu, marmara, karadeniz,[icAnadoluSehirleri, marmaraSehirleri]] = [
+    {name:"İç Anadolu", populations: "20M"},
+    {name:"Marmara", populations: "30M"},
+    {name:"Karadeniz", populations: "10M"},
+    [
+        ["Ankara", "Konya"],
+        ["İstanbul", "Bursa"]
+    ]
+];
+
+console.log(icAnadoluSehirleri);
+
+
+// let {productName: productNAME, unitPrice: unitPRICE, quantity: quantity} = {productName : "Elma", unitPrice : 10, quantity:5}
+
+// console.log(productNAME);
+// console.log(unitPRICE);
+// console.log(quantity);
+
+let productNAME,unitPRICE, newQuantity
+({productName: productNAME, unitPrice: unitPRICE, quantity: newQuantity} = {productName : "Elma", unitPrice : 10, quantity:5})
+
+console.log(productNAME);
+console.log(unitPRICE);
+console.log(newQuantity);
+
