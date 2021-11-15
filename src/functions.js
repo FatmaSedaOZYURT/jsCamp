@@ -80,4 +80,14 @@ let products = [
 
 addToCart4(products);
 
-console.log("1:58");
+function add (number1, number2){
+    console.log(number1 + number2);
+}
+
+//Rest daima son parametre olmalıdır.
+function add (...numbers){
+    console.log(numbers.reduce((n, number)=> n + number, 0));
+}
+
+add(20,30,40);
+
