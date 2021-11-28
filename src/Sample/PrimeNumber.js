@@ -18,8 +18,3 @@ function findPrime(...numbers) {
 
 findPrime(21, 3, 5,4,7,12,14)
 
-console.log(" Parametre olarak girilen iki sayının arkadaş sayılar olup olmadığını bulan programı yazınız.");
-
-function findFriendNumbers(number1, number2) {
-    
-}
