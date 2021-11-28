@@ -17,4 +17,14 @@
     </ul>
   </li>
   <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/functions.js">Functions🏄‍♀️</a></li>
+  
+  <li>
+    <ul><a href="https://github.com/FatmaSedaOZYURT/jsCamp/tree/main/src/Sample">🎯 Çalışma</a>
+      <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/FriendNumber.js">Arkadaş Sayılar</a></li>
+      <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PerfectNumber.js">Mükemmel Sayılar</a></li>
+      <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PrimeNumber.js">Asal Sayılar</a></li>
+      <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PrimeNumbers.js"></a>Asal Sayıları Bulma</li>
+    </ul>
+   </li>
+  
   </ul>
