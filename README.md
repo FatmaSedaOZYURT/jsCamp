@@ -23,7 +23,7 @@
       <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/FriendNumber.js">Arkadaş Sayılar</a></li>
       <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PerfectNumber.js">Mükemmel Sayılar</a></li>
       <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PrimeNumber.js">Asal Sayılar</a></li>
-      <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PrimeNumbers.js"></a>Asal Sayıları Bulma</li>
+      <li><a href="https://github.com/FatmaSedaOZYURT/jsCamp/blob/main/src/Sample/PrimeNumbers.js">Asal Sayıları Bulma</a></li>
     </ul>
    </li>
   
